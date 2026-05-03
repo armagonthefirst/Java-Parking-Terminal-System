@@ -1,0 +1,32 @@
+#BlueJ class context
+comment0.target=Carpark
+comment0.text=\r\n\ Project\ 1\:\ Carpark.java\ class.\ Defines\ parking\ slots\ array\ as\ well\ as\ methods\ for\ necessary\ functionality\r\n\ @author\ Mohamed\ Shariq\ Usoof\ <104841889>\r\n\ @version\ java\ 22\r\n
+comment1.params=nostaff\ novisitor
+comment1.target=java.lang.String\ createSlots(int,\ int)
+comment1.text=\r\n\ Method\ for\ creating\ staff\ and\ visitor\ slots\ upon\ program\ opening\r\n\r\n\ User\ specifies\ number\ of\ staff\ and\ number\ of\ visitor\ slots\r\n\ creates\ slots\ in\ correct\ format\ for\ each\ role\r\n\ Prints\ out\ list\ of\ slots,\ and\ notifies\ number\ of\ slots\ created\ for\ each\ role\r\n
+comment10.params=
+comment10.target=java.util.List\ getVisitorSlots()
+comment2.params=
+comment2.target=java.lang.String\ listSlots()
+comment2.text=\r\n\ Method\ for\ listing\ all\ parking\ slots\:\ slot\ id,\ staff/visitor\ slot,\ occupied/vacant\r\n\r\n\ No\ user\ input\ parameter,\ runs\ a\ for\ loops\ and\ prints\ using\ showSlot()\r\n\ showSlot\ includes\ showCar\ if\ car\ is\ parked,\ see\ Parkingslot.java\ and\ Car.java\r\n\ includes\ a\ tally\ that\ notifies\ user\ how\ many\ slots\ exist\r\n\ if\ parking\ slot\ is\ occupied,\ also\ displays\ car\ registration\ number,\ owner\ name,\ parking\ duration\ and\ fee\r\n
+comment3.params=id\ staffpark
+comment3.target=java.lang.String\ addSlot(java.lang.String,\ java.lang.Boolean)
+comment3.text=\r\n\ Method\ for\ adding\ parking\ slot,\ all\ info\ provided\ by\ user,\ does\ not\ include\ car\ object\r\n\r\n\ Requires\ user\ input\ parameter\ slot\ id\ (String),\ and\ staffpark\ (boolean)\r\n\ Displays\ error\ if\ parking\ slot\ already\ exists,\ or\ if\ pattern\ doesn't\ match\r\n
+comment4.params=id
+comment4.target=java.lang.String\ deleteSlot(java.lang.String)
+comment4.text=\r\n\ Method\ for\ deleting\ slot,\ ensure\ no\ car\ is\ parked\r\n\r\n\ Requires\ user\ input\ parameter\ slot\ id\ (String)\r\n\ If\ slot\ Id\ is\ found\ and\ is\ vacant,\ deletes\ slot\ and\ prints\ success\ msg,\ stores\ deleted\ \=\ true\r\n\ if\ slot\ id\ is\ not\ found\ or\ slot\ is\ occupied,\ prints\ error\ msg\r\n
+comment5.params=
+comment5.target=java.lang.String\ deleteVacants()
+comment5.text=\r\n\ Method\ for\ deleting\ all\ parking\ slots\ where\ carparked\=false\r\n\r\n\ Does\ not\ require\ user\ parameter\r\n\ Uses\ for\ loop\ to\ go\ through\ all\ slots,\ if\ slot\ is\ not\ occupied,\ deletes\r\n\ Tallies\ up\ the\ number\ of\ deleted\ slots\ and\ prints\ it\ to\ the\ user\r\n\ modification\ made\ to\ the\ for\ loop\ (i--)\ to\ make\ sure\ no\ slot\ gets\ skipped\r\n
+comment6.params=id\ rnum\ owner\ staff
+comment6.target=java.lang.String\ parkCar(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.Boolean)
+comment6.text=\r\n\ Method\ for\ parking\ car\r\n\r\n\ Requires\ many\ user\ input\ parameters\:\ slot\ id,\ car\ regist\ no,\ owner\ name,\ owner\ staff\ status\r\n\ slot\ Id\ is\ for\ parking\ slot,\ rest\ are\ for\ Car\ object\r\n\ runs\ checks\ for\ whether\ parking\ slot\ ID\ is\ occupied,\ whether\ the\ car\ regist\ no\ is\ already\ parked\r\n\ whether\ owners\ role\ (staff)\ matches\ parking\ space,\ if\ parking\ slot\ user\ wants\ to\ park\ in\ exists\r\n\ Also\ runs\ a\ check\ on\ vehicle\ registration\ pattern\r\n
+comment7.params=rnum
+comment7.target=java.lang.String\ findCar(java.lang.String)
+comment7.text=\r\n\ Method\ for\ finding\ car\ by\ registration\ number,\ if\ found,\ show\ slot\ and\ owner\r\n\r\n\ Requires\ car\ registration\ number\ to\ look\ for\r\n\ Runs\ a\ for\ loop,\ if\ registration\ number\ found,\ prints\ success\ message\ and\ car\ details\ as\ well\ as\ parking\ time\ and\ fee\r\n\ if\ not\ found,\ prints\ error\ message\r\n
+comment8.params=rnum
+comment8.target=java.lang.String\ deleteCar(java.lang.String)
+comment8.text=\r\n\ Method\ for\ removing\ car\ by\ registration\ number\r\n\r\n\ Requires\ car\ registration\ number\ to\ look\ for\r\n\ Runs\ a\ for\ loop,\ if\ registration\ number\ found,\ unparks\ car\ (sets\ car\ object\ to\ null,\ and\ sets\ parked\ to\ false)\r\n\ if\ car\ registration\ number\ is\ not\ found,\ prints\ error\ message\r\n
+comment9.params=
+comment9.target=java.util.List\ getStaffSlots()
+numComments=11
